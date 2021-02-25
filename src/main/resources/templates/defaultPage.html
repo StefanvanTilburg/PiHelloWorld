@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Default page</title>
+</head>
+<body>
+    <h1>Static default greeting on default page</h1>
+    <h1 th:if="${greeting}" th:text="${greeting.getMessage()}">Here should stand the mesage loaded in the controller</h1>
+</body>
+</html>
